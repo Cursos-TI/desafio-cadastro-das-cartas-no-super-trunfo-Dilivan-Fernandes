@@ -100,10 +100,35 @@ struct Carta2 carta2; //  Estrutura de dados da segunda carta.
    printf("\n\n");//  Quebra de linhas.
 
     // Exibição dos Dados das Cartas:
- printf("\n Cartas cadastradas\n");
-
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+ printf("Cartas cadastradas\n\n");
+
+ //  Dados da primeira carta.
+printf("Estado: %s\n",carta1.Estado);
+printf("Código da carta: %s\n",carta1.CodigoDaCarta);
+printf("Nome da cidade: %s\n",carta1.NomeDaCidade);
+printf("População: %d \n",carta1.Populacao);
+printf("Área: %.2f\n",carta1.Area);
+printf("PIB: %.2f\n",carta1.PIB);
+printf("Pontos turísticos: %d\n",carta1.PontosTuristicos);
+
+printf("\n\n");//  Quebra de linhas.
+
+ //  Dados da segunda carta.
+
+printf("Estado: %s\n",carta2.Estado);
+printf("Código da carta: %s\n",carta2.CodigoDaCarta);
+printf("Nome da cidade: %s\n",carta2.NomeDaCidade);
+printf("População: %d\n",carta2.Populacao);
+printf("Área: %.2f\n",carta2.Area);
+printf("PIB: %.2f \n",carta2.PIB);
+printf("Pontos turísticos: %d\n",carta2.PontosTuristicos);
+
+printf("\n\n");//  Quebra de linhas.
+
+    
 
     return 0;
 }
