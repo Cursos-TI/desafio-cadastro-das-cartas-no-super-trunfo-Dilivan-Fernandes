@@ -19,6 +19,8 @@ int Populacao;
 float Area;
 float PIB;
 int PontosTuristicos;
+float Densidade_Populacional1;
+float PIB_per_Capita1;
 
 };
 
@@ -31,7 +33,8 @@ int Populacao;
 float Area;
 float PIB;
 int PontosTuristicos;
-
+float Densidade_Populacional2;
+float PIB_per_Capita2;
 };
 
 
@@ -72,6 +75,8 @@ struct Carta2 carta2; //  Estrutura de dados da segunda carta.
 
         printf("Digite a quantidade de pontos turísticos..: ");
         scanf("%d",&carta1.PontosTuristicos);// Captura da quantidade de pontos turísticos.
+        carta1.Densidade_Populacional1 = carta1.Populacao / carta1.Area;
+        carta1.PIB_per_Capita1 = carta1.PIB / carta1.Populacao;
 
  printf("\n\nCADASTRE A SEGUNDA CARTA\n\n");// Texto da interface.
 
@@ -98,6 +103,8 @@ struct Carta2 carta2; //  Estrutura de dados da segunda carta.
         printf("Digite a quantidade de pontos turísticos..: ");
         scanf("%d",&carta2.PontosTuristicos);// Captura da quantidade de pontos turísticos.
 
+        carta2.Densidade_Populacional2 = carta2.Populacao / carta2.Area;
+        carta2.PIB_per_Capita2 = carta2.PIB / carta2.Populacao;
  printf("\n\n");//  Quebra de linhas.
 
     // Exibição dos Dados das Cartas:
@@ -114,7 +121,8 @@ struct Carta2 carta2; //  Estrutura de dados da segunda carta.
     printf("Área: %.2f\n",carta1.Area);
     printf("PIB: %.2f\n",carta1.PIB);
     printf("Pontos turísticos: %d\n",carta1.PontosTuristicos);
-
+    printf("Densidade Populacional: %.2f \n", carta1.Densidade_Populacional1);
+    printf("PIB per Capita: %.2f \n", carta1.PIB_per_Capita1);
 printf("\n\n");//  Quebra de linhas.
 
    //  Dados da segunda carta.
@@ -125,7 +133,8 @@ printf("\n\n");//  Quebra de linhas.
     printf("Área: %.2f\n",carta2.Area);
     printf("PIB: %.2f \n",carta2.PIB);
     printf("Pontos turísticos: %d\n",carta2.PontosTuristicos);
-
+    printf("Densidade Populacional: %.2f \n", carta2.Densidade_Populacional2);
+    printf("PIB per Capita: %.2f \n", carta2.PIB_per_Capita2);
 printf("\n\n");//  Quebra de linhas.
 
     
