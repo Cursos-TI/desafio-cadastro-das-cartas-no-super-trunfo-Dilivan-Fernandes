@@ -58,6 +58,8 @@ struct Carta2 carta2; //  Estrutura de dados da segunda carta.
         printf("Digite o estado...............: ");
         scanf("%s",&carta1.Estado);// Captura do estado.
 
+        printf("\n");
+
         printf("Digite o código da carta......: ");
         scanf("%s",&carta1.CodigoDaCarta);// Captura do código da carta.
 
@@ -137,7 +139,18 @@ printf("\n\n");//  Quebra de linhas.
     printf("PIB per Capita: %.2f \n", carta2.PIB_per_Capita2);
 printf("\n\n");//  Quebra de linhas.
 
-    
+    long long int  pib1 = carta1.PIB;
+    long long int  pib2 = carta2.PIB;
 
+    if (pib1 > pib2)
+    {
+        printf("A carta %s Vencel\n", carta1.CodigoDaCarta);
+        printf("Propriedade vencedora foi o PIB da cidade %s \n\n",carta1.NomeDaCidade);
+    }else if(pib2 > pib1){
+
+        printf("A carta %s Vencel\n", carta2.CodigoDaCarta);
+        printf("A propriedade vencedora foi o PIB da cidade. %s \n\n",carta2.NomeDaCidade);
+    }
+     printf("\n");
     return 0;
 }
