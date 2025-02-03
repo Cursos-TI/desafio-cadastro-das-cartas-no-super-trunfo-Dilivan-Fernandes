@@ -43,11 +43,11 @@ int main() {
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
+
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
+
     printf(".........................SUPER TRUNFO.............................\n\n");// Texto da interface.
 printf("CADASTRE A PRIMEIRA CARTA\n\n");// Texto da interface.
 
@@ -58,25 +58,26 @@ struct Carta2 carta2; //  Estrutura de dados da segunda carta.
         printf("Digite o estado...............: ");
         scanf("%s",&carta1.Estado);// Captura do estado.
 
-        printf("\n");
+printf("\n");
 
         printf("Digite o código da carta......: ");
         scanf("%s",&carta1.CodigoDaCarta);// Captura do código da carta.
-
+printf("\n");
         printf("Digite o nome da cidade.......: ");
         scanf("%s",&carta1.NomeDaCidade);// Captura do nome da cidade.
-
+printf("\n");
         printf("Digite a população............: ");
         scanf("%d",&carta1.Populacao);// Captura da população.
-
+printf("\n");
         printf("Digite a área em km²..........: ");
         scanf("%f",&carta1.Area);// Captura da área.
-
+printf("\n");
         printf("Digite o PIB .................: ");
         scanf("%f",&carta1.PIB);// Captura do PIB.
-
+printf("\n");
         printf("Digite a quantidade de pontos turísticos..: ");
         scanf("%d",&carta1.PontosTuristicos);// Captura da quantidade de pontos turísticos.
+
         carta1.Densidade_Populacional1 = carta1.Populacao / carta1.Area;
         carta1.PIB_per_Capita1 = carta1.PIB / carta1.Populacao;
 
@@ -86,25 +87,25 @@ struct Carta2 carta2; //  Estrutura de dados da segunda carta.
       //  Captura de dados da segunda carta.
         printf("Digite o estado...............: ");
         scanf("%s",&carta2.Estado);// Captura do estado.
-
+printf("\n");
         printf("Digite o código da carta......: ");
         scanf("%s",&carta2.CodigoDaCarta);// Captura do código da carta.
-
+printf("\n");
         printf("Digite o nome da cidade.......: ");
         scanf("%s",&carta2.NomeDaCidade);// Captura do nome da cidade.
-
+printf("\n");
         printf("Digite a população............: ");
         scanf("%d",&carta2.Populacao);// Captura da população.
-
+printf("\n");
         printf("Digite a área em km²..........: ");
         scanf("%f",&carta2.Area);// Captura da área.
-
+printf("\n");
         printf("Digite o PIB .................: ");
         scanf("%f",&carta2.PIB);// Captura do PIB.
-
+printf("\n");
         printf("Digite a quantidade de pontos turísticos..: ");
         scanf("%d",&carta2.PontosTuristicos);// Captura da quantidade de pontos turísticos.
-
+printf("\n");
         carta2.Densidade_Populacional2 = carta2.Populacao / carta2.Area;
         carta2.PIB_per_Capita2 = carta2.PIB / carta2.Populacao;
  printf("\n\n");//  Quebra de linhas.
@@ -145,11 +146,11 @@ printf("\n\n");//  Quebra de linhas.
     if (pib1 > pib2)
     {
         printf("A carta %s Vencel\n", carta1.CodigoDaCarta);
-        printf("Propriedade vencedora foi o PIB da cidade %s \n\n",carta1.NomeDaCidade);
+        printf("Propriedade vencedora foi o PIB da cidade ( %s )\n\n",carta1.NomeDaCidade);
     }else if(pib2 > pib1){
 
         printf("A carta %s Vencel\n", carta2.CodigoDaCarta);
-        printf("A propriedade vencedora foi o PIB da cidade. %s \n\n",carta2.NomeDaCidade);
+        printf("A propriedade vencedora foi o PIB da cidade ( %s ). \n\n",carta2.NomeDaCidade);
     }
      printf("\n");
     return 0;
