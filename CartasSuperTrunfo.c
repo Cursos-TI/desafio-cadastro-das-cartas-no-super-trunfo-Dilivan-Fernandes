@@ -37,7 +37,7 @@ float Densidade_Populacional2;
 float PIB_per_Capita2;
 };
 
-
+// Início do programa.
 int main() {
         setlocale(LC_ALL,"Portuguese");//  Abilita o uso de acentos nos textos.
 
